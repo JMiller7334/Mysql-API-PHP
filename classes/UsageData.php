@@ -12,7 +12,7 @@ class UsageData {
         global $pdo;
 
         //query:
-        $stmt = $pdo->prepare("SELECT * FROM usage_data WHERE customer_id = :customerId");
+        $stmt = $pdo->prepare("SELECT * FROM usage_data WHERE customerId = :customerId");
 
         //binding:
         $stmt->bindParam(':customerId', $customerId);

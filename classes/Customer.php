@@ -3,21 +3,38 @@
  * This class holds all functionality for running querys to customer table.
  */
 
-include_once '../connect/db.php';
+include_once './connect/db.php';
 
 class Customer 
 {
 
-    // -- GET ALL FUNCTION
+    //-- GET ALL FUNCTION --
     public static function getAll(): array {
         global $pdo;
 
-        //query:
-        $stmt = $pdo->prepare("SELECT * FROM customers");
+        try {
+            //query:
+            $stmt = $pdo->prepare("SELECT * FROM customers");
+            $stmt->execute();
 
-        $stmt->execute();
-        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+            $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+            //check if the result is empty
+            if (!$result) {
+                return [];  //return an empty array if no customers are found
+            }
+
+            return $result;
+
+
+        } catch (PDOException $e) {
+            
+            //catch any errors and return an empty array
+            error_log("Database error: " . $e->getMessage());  // Log the error
+            return [];  //return an empty array in case of error
+        }
     }
+
 
 
     // -- GET BY ID FUNCTION
