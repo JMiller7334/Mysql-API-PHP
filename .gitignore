@@ -1,0 +1,11 @@
+# Ignore db.php file to keep it out of version control
+db.php
+
+# Ignore db.php in the 'connect' directory
+/connect/db.php
+
+# Ignore log files
+*.log
+
+# Ignore other sensitive or temporary files
+*.env
