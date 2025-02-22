@@ -34,7 +34,7 @@ curl -X GET "https://jacobjmiller.com/api/customers"
 
 * Update a Customer
 ```sh
-curl -X PUT "https://jacobjmiller.com/api/customers&id=2" \
+curl -X PUT "https://jacobjmiller.com/mysql-api/index.php?customers&id=2" \
      -H "Content-Type: application/json" \
      -d '{
            "name": "Mark Nova",
@@ -43,6 +43,7 @@ curl -X PUT "https://jacobjmiller.com/api/customers&id=2" \
            "email": "nova@galaxytravel.io",
            "phone": "555-5555"
          }'
+
 ```
 
 * Delete a Customer
