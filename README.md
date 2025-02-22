@@ -29,12 +29,12 @@ curl -X POST "https://jacobjmiller.com/api/customers" \
 
 * Get All Customers
 ```sh
-curl -X GET "https://jacobjmiller.com/api/index.php?customers"
+curl -X GET "https://jacobjmiller.com/api/customers"
 ```
 
 * Update a Customer
 ```sh
-curl -X PUT "https://jacobjmiller.com/api/index.php?customers&id=5" \
+curl -X PUT "https://jacobjmiller.com/api/customers&id=2" \
      -H "Content-Type: application/json" \
      -d '{
            "name": "Mark Nova",
@@ -47,7 +47,7 @@ curl -X PUT "https://jacobjmiller.com/api/index.php?customers&id=5" \
 
 * Delete a Customer
 ```sh
-curl -X DELETE "https://jacobjmiller.com/api/index.php?customers&id=5"
+curl -X DELETE "https://jacobjmiller.com/api/customers&id=2"
 ```
 
 **Notes**
