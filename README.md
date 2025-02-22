@@ -16,7 +16,7 @@ Built with PHP and designed for easy interaction via HTTP requests.
 ## Testing with cURL
 * Create a New Customer
 ```sh
-curl -X POST "https://jacobjmiller.com/api/index?customers" \
+curl -X POST "https://jacobjmiller.com/mysql-api/index?customers" \
      -H "Content-Type: application/json" \
      -d '{
            "name": "James",
@@ -29,12 +29,12 @@ curl -X POST "https://jacobjmiller.com/api/index?customers" \
 
 * Get All Customers
 ```sh
-curl -X GET "https://jacobjmiller.com/api/index?customers"
+curl -X GET "https://jacobjmiller.com/mysql-api/index?customers"
 ```
 
 * Update a Customer
 ```sh
-curl -X PUT "https://jacobjmiller.com/api/index?customers&id=2" \
+curl -X PUT "https://jacobjmiller.com/mysql-api/index?customers&id=2" \
      -H "Content-Type: application/json" \
      -d '{
            "name": "Mark Nova",
@@ -48,7 +48,7 @@ curl -X PUT "https://jacobjmiller.com/api/index?customers&id=2" \
 
 * Delete a Customer
 ```sh
-curl -X DELETE "https://jacobjmiller.com/api/index?customers&id=2"
+curl -X DELETE "https://jacobjmiller.com/mysql-api/index?customers&id=2"
 ```
 
 **Notes**
@@ -58,7 +58,7 @@ curl -X DELETE "https://jacobjmiller.com/api/index?customers&id=2"
 ### Customers
 **Get All Customers**
 
-* URL: ``https://jacobjmiller.com/api/index?customers``
+* URL: ``https://jacobjmiller.com/mysql-api/index?customers``
 * Method: ``GET``
 * Response Code: ``200 OK``
 * Response Example:
@@ -77,8 +77,8 @@ curl -X DELETE "https://jacobjmiller.com/api/index?customers&id=2"
 ````
 
 **Get Customer by ID**
-* URL: ``https://jacobjmiller.com/api/index?customers&id={customerId}``
-  * Example: ``https://jacobjmiller.com/api/index?customers&id=1``
+* URL: ``https://jacobjmiller.com/mysql-api/index?customers&id={customerId}``
+  * Example: ``https://jacobjmiller.com/mysql-api/index?customers&id=1``
 * Method: ``GET``
 * Response Code: ``200 OK`` (if found), ``404 Not Found`` (if customer does not exist)
 * Response Example:
@@ -95,7 +95,7 @@ curl -X DELETE "https://jacobjmiller.com/api/index?customers&id=2"
 
 
 **Create a New Customer**
-* URL: ``https://jacobjmiller.com/api/index?customers``
+* URL: ``https://jacobjmiller.com/mysql-api/index?customers``
 * Method: ``POST``
 * Headers:
 ```` json
@@ -118,7 +118,7 @@ curl -X DELETE "https://jacobjmiller.com/api/index?customers&id=2"
 
 
 **Update a Customer**
-* URL: ``https://jacobjmiller.com/api/index?customers&id={customerId}``
+* URL: ``https://jacobjmiller.com/mysql-api/index?customers&id={customerId}``
 * Method: ``PUT``
 * Response Code: ``200 OK`` (if updated), ``404 Not Found`` (if customer does not exist)
 * Body Example:
@@ -135,7 +135,7 @@ curl -X DELETE "https://jacobjmiller.com/api/index?customers&id=2"
 
 
 **Delete a Customer**
-* URL: ``https://jacobjmiller.com/api/index?customers&id={customerId}``
+* URL: ``https://jacobjmiller.com/mysql-api/index?customers&id={customerId}``
 * Method: ``DELETE``
 * Response Code: ``204 No Content`` (if deleted), ``404 Not Found`` (if customer did not exist)
 * Success Response: ``No response``
@@ -148,8 +148,8 @@ curl -X DELETE "https://jacobjmiller.com/api/index?customers&id=2"
 
 ### Usage Data
 **Get Usage Data by Customer ID**
-* URL: ``https://jacobjmiller.com/api/index?usage&customerId={customerId}``
-  * Example: ``https://jacobjmiller.com/api/index?usage&customerId=1``
+* URL: ``https://jacobjmiller.com/mysql-api/index?usage&customerId={customerId}``
+  * Example: ``https://jacobjmiller.com/mysql-api/index?usage&customerId=1``
 * Method: ``GET``
 * Response Code: ``Code: 200 OK`` (if found), ``404 Not Found`` (if no usage data exists)
 * Response:
@@ -167,7 +167,7 @@ curl -X DELETE "https://jacobjmiller.com/api/index?customers&id=2"
 
 
 **Create New Usage Data**
-* URL: ``https://jacobjmiller.com/api/index?usage``
+* URL: ``https://jacobjmiller.com/mysql-api/index?usage``
 * Method: ``POST``
 * Response Code: ``201 Created``
 * Body Example:
@@ -182,7 +182,7 @@ curl -X DELETE "https://jacobjmiller.com/api/index?customers&id=2"
 
 
 **Update Usage Data**
-* URL: ``https://jacobjmiller.com/api/index?usage&id={usageId}``
+* URL: ``https://jacobjmiller.com/mysql-api/index?usage&id={usageId}``
 * Method: ``PUT``
 * Response Code: ``200 OK`` (if updated), ``404 Not Found`` (if usage data does not exist)
 * Body Example:
@@ -197,7 +197,7 @@ curl -X DELETE "https://jacobjmiller.com/api/index?customers&id=2"
 
 
 **Delete Usage Data**
-* URL: ``https://jacobjmiller.com/api/index?usage&id={usageId}``
+* URL: ``https://jacobjmiller.com/mysql-api/index?usage&id={usageId}``
 * Method: ``DELETE``
 Response Code: ``204 No Content`` (if deleted), ``404 Not Found`` (if usage data does not exist)
 Success Response: ``No response``
