@@ -16,7 +16,7 @@ Built with PHP and designed for easy interaction via HTTP requests.
 ## Testing with cURL
 * Create a New Customer
 ```sh
-curl -X POST "https://jacobjmiller.com/api/index.php?customers" \
+curl -X POST "https://jacobjmiller.com/api/customers" \
      -H "Content-Type: application/json" \
      -d '{
            "name": "James",
