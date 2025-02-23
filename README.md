@@ -3,7 +3,7 @@ This API provides CRUD functionality for managing Customers and Usage Data in a 
 Built with PHP and designed for easy interaction via HTTP requests.
 
 ## Related Websites
-* [JacobJMiller.com](https://JacobJMiller.com).
+* [JacobJMiller.com](https://JacobJMiller.com)
 
 ## Related Projects
 * [MySQL API (Express.js)](https://github.com/JMiller7334/mySQL-API)
