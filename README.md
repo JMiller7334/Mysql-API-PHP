@@ -11,7 +11,7 @@ Built with PHP and designed for easy interaction via HTTP requests.
 * [Dashboard Database Project](https://github.com/JMiller7334/Dashboard-Database-project)
 
 ## Base URL
-``https://jacobjmiller.com/api/index``
+``https://jacobjmiller.com/mysql-api/index``
 
 ## Testing with cURL
 * Create a New Customer
