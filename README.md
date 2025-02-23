@@ -6,9 +6,9 @@ Built with PHP and designed for easy interaction via HTTP requests.
 * [JacobJMiller.com](https://JacobJMiller.com).
 
 ## Related Projects
-* [MySQL API (Express.js)](https://github.com/JMiller7334/mySQL-API).
-* [iOS Dashboard App](https://github.com/JMiller7334/iOS-Dashboard-App).
-* [Dashboard Database Project](https://github.com/JMiller7334/Dashboard-Database-project).
+* [MySQL API (Express.js)](https://github.com/JMiller7334/mySQL-API)
+* [iOS Dashboard App](https://github.com/JMiller7334/iOS-Dashboard-App)
+* [Dashboard Database Project](https://github.com/JMiller7334/Dashboard-Database-project)
 
 ## Base URL
 ``https://jacobjmiller.com/api/index``
