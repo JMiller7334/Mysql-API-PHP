@@ -106,10 +106,10 @@ curl -X DELETE "https://jacobjmiller.com/mysql-api/index?customers&id=2"
 * Body Example:
 ````json
 {
-  "name": "Cheyenne",
+  "name": "Chey",
   "address": "Beyond the Horizon, Starborn Sector",
   "customer_type": "Ethereal Voyager",
-  "email": "cheyenne@starpath.io",
+  "email": "chey@starpath.io",
   "phone": "555-9876"
 }
 ````
@@ -124,7 +124,7 @@ curl -X DELETE "https://jacobjmiller.com/mysql-api/index?customers&id=2"
 * Body Example:
 ````json
 {
-  "name": "Cheyenne Nova",
+  "name": "Chey Nova",
   "address": "Galactic Edge, Orion Belt",
   "customer_type": "Celestial Wanderer",
   "email": "nova@galaxytravel.io",
