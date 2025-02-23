@@ -52,7 +52,6 @@ curl -X DELETE "https://jacobjmiller.com/mysql-api/index?customers&id=2"
 ```
 
 ## Endpoints
-**Notes**
 * Replace {customerId} and {usageId} with actual IDs.
 
 ### Customers
